@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+🚀 My Professional Portfolio (Dev.ekoiedithkouadio)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ceci est le code source de mon site web personnel. En tant qu'étudiant en Big Data et IA en 1ème années Master et Développeur Fullstack, ce projet me sert de vitrine pour exposer mes compétences, mes projets et mon parcours académique.
 
-Currently, two official plugins are available:
+🎨 Design & Concept
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+L'objectif était de créer une interface épurée, rapide et responsive.
 
-## React Compiler
+Minimalisme : Focus sur le contenu pour une lecture rapide par les recruteurs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Performance : Optimisation du rendu avec React et gestion du style via Utility-First CSS.
 
-## Expanding the ESLint configuration
+🎯Stack Technique
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Frontend : React.js (Hooks, Context API)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Styling : Tailwind CSS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Animations : Framer Motion 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Déploiement : [Vercel / Netlify / GitHub Pages]
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+💻 Installation Locale
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Si vous souhaitez explorer le code ou voir comment j'ai structuré mes composants :
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Cloner le projet : git clone https://github.com/ton-pseudo/mon-portfolio.git
+
+Installer les dépendances : npm install
+
+Lancer le serveur de développement : npm run dev
+
+📑 Structure du Projet
+
+Plaintext
+
+├── src/
+│   ├── components/    # Composants réutilisables (Navbar, Footer, Button)
+│   ├── sections/      # Sections de la page (Hero, About, Projects, Contact)
+│   ├── assets/        # Images et fichiers statiques
+│   └── data/          # Fichiers JSON contenant mes textes (pour faciliter la maintenance)
+├── public/
+└── tailwind.config.js
+
+📈 Roadmap personnelle (Améliorations à venir)
+
+Comme je me spécialise en Big Data, je compte faire évoluer ce portfolio :
+
+[ ] Intégration d'API : Récupérer dynamiquement mes derniers commits GitHub.
+
+[ ] Visualisation de données : Ajouter une section avec des graphiques D3.js ou Chart.js sur mes statistiques de veille technologique.
+
+[ ] Mode Sombre : Optimisation de l'expérience utilisateur.
+
+🛡️ Note sur l'authenticité
+
+Ce projet est strictement personnel.
+
+Propriété intellectuelle : Tout le code et le design ont été réalisés par moi-même (Kouadio Edith).
+
+Contributions : Pour garantir l'intégrité de mon évaluation, je n'accepte aucune contribution extérieure sur ce dépôt. Les suggestions sont toutefois bienvenues via les "Issues".
+
+📩 Contact
+LinkedIn : [ ]
+
+Email : [kouadioedith440@gmail.com]
+
+Site Web : []
