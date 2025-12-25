@@ -1,17 +1,18 @@
 import React from "react";
 
-const Button = ({ label, onClick, disabled }) => {
+const Button = ({ label, variant, className, onClick }) => {
+
+    const baseStyles = "w-full sm:w-auto px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95";
+  
+    const variants = {
+        white: "bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.2)]",
+        transparent: "bg-transparent border border-white/20 text-white hover:bg-white/5"
+    }; 
+     
   return (
     <button 
         onClick={onClick}
-        disabled={disabled} 
-        className={`
-            px-4 py-2 rounded-md text-white font-semibold transition 
-            ${disabled
-                ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-black hover:shadow-lg shadow-purple-800/50 hover:bg-purple-700'
-            }
-        `}
+        className={`${baseStyles} ${variants[variant]} ${className}`}
     >
         {label}
 
