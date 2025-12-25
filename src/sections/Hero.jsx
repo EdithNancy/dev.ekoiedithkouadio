@@ -14,8 +14,6 @@ return (
             
             {/* PARTIE GAUCHE : Texte et contenu */}
             <main className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-start align-middle px-12 md:px-24 mt-16 md:mt-24">
-                    
-                
                 
                 <div className="mb-8 flex items-center space-x-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-md">
                     <span className="flex h-2 w-2 rounded-full bg-purple-500 animate-pulse"></span>
@@ -30,16 +28,16 @@ return (
 
                 <div className="max-w-xl text-center md:text-left z-10">
                     {/* Titre Principal */}
-                    <h1 className="mb-8 text-6xl md:text-8xl font-serif font-medium tracking-tight bg-linear-to-br from-white via-white to-gray-500 bg-clip-text text-transparent">Kouadio
+                    <h1 className="mb-8 text-6xl md:text-7xl font-serif font-medium tracking-tight bg-linear-to-br from-white via-white to-gray-500 bg-clip-text text-transparent">Kouadio
                          <span className="italic font-light text-purple-400 text-5xl">+</span>
                     </h1>
                     
 
                     <LinearBar className={"bg-gray-600 "}/>  
                     
-                    <p className="mb-10 text-lg md:text-xl text-gray-300 leading-relaxed">
+                    <p className="mb-10 md:text-xl text-gray-300 leading-relaxed">
                         <p className='mb-4'><span className='text-bold italic font-bold'>Développer - Analyser -Scaler.</span></p> 
-                        <p>
+                        <p className='text-base'>
                                 Développeur logiciel passionnée par l'écosystème Data. <br />
                                 Mon letmotiv : bâtir le pont entre le code haute performance et l'exploitation massive de données pour créer des applications intelligentes et scalables.
                         </p>
@@ -48,8 +46,8 @@ return (
                     <LinearBar className={"bg-gray-600 "}/> 
                     
                     <div className="flex flex-col sm:flex-row items-center gap-6">
-                        <Button label="Découvrez plus" variant="white" onClick={() => {}}/>
-                        <Button label="Télécharger mon CV ↗" variant="transparent" onClick={() => {}} />
+                        <Button label="Découvrez" variant="white" onClick={() => {}}/>
+                        <Button label="CV ↗" variant="transparent" onClick={() => {}} />
                     </div>
                     
                 </div>
@@ -59,7 +57,7 @@ return (
             </main>
 
             {/* PARTIE DROITE : Image et Cartes transparentes */}
-            <div className="relative w-full md:w-1/2 h-125 md:h-screen flex items-center justify-center p-6 md:p-12 overflow-visible">
+            <div className="relative w-full md:w-1/2 h-125 md:h-screen flex items-center justify-center p-6 md:p-12 overflow-visible ">
                 <div className="relative w-full h-full max-h-175">
                     {/* L'image principale */}
                     <img

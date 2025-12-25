@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="fixed left-0 top-0 flex h-screen w-20 flex-col items-center border-r border-slate-800 py-8">
+    <div className="fixed left-0 top-0 flex h-screen w-20 flex-col items-center border-r border-slate-800 py-8 z-50">
       {/* Conteneur des boutons */}
       <div className="flex flex-col space-y-6">
         {menuItems.map((item, index) => (
